@@ -12,6 +12,7 @@
   "column_break_rvfi",
   "salutation",
   "gender",
+  "image",
   "contact_section",
   "email_address",
   "column_break_kohk",
@@ -26,25 +27,31 @@
  ],
  "fields": [
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "first_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "First Name"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "last_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Last Name"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "gender",
-   "fieldtype": "Select",
-   "in_list_view": 1,
+   "fieldtype": "Link",
    "label": "Gender",
    "options": "Gender"
   },
   {
    "fieldname": "salutation",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Salutation",
    "options": "Salutation"
   },
@@ -59,8 +66,7 @@
   },
   {
    "fieldname": "person_section",
-   "fieldtype": "Section Break",
-   "label": "Person"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "contact_section",
@@ -74,7 +80,7 @@
   },
   {
    "fieldname": "country",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Country",
    "options": "Country"
   },
@@ -89,11 +95,13 @@
    "label": "Postal Code"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "email_address",
    "fieldtype": "Data",
    "label": "Email Address"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "phone",
    "fieldtype": "Data",
    "label": "Phone"
@@ -115,11 +123,18 @@
    "fieldname": "address_line_2",
    "fieldtype": "Data",
    "label": "Address Line 2"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-20 14:48:55.771877",
+ "modified": "2025-02-20 15:14:53.197885",
  "modified_by": "Administrator",
  "module": "Wohlfahrt Management",
  "name": "Supporter",
