@@ -18,9 +18,10 @@
   "phone",
   "address_section",
   "address_line_1",
+  "city",
   "postal_code",
   "column_break_dlws",
-  "city",
+  "address_line_2",
   "country"
  ],
  "fields": [
@@ -39,8 +40,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Gender",
-   "options": "Gender",
-   "reqd": 1
+   "options": "Gender"
   },
   {
    "fieldname": "salutation",
@@ -110,11 +110,16 @@
   {
    "fieldname": "column_break_kohk",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-20 14:08:42.547142",
+ "modified": "2025-02-20 14:48:55.771877",
  "modified_by": "Administrator",
  "module": "Wohlfahrt Management",
  "name": "Supporter",
