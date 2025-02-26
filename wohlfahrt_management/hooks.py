@@ -137,34 +137,18 @@ app_license = "agpl-3.0"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Supporter": {
+        "validate": "wohlfahrt_management.geocoding_queue.check_if_new_geocoding_job_is_needed",
+    }
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"wohlfahrt_management.tasks.all"
-# 	],
-# 	"daily": [
-# 		"wohlfahrt_management.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"wohlfahrt_management.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"wohlfahrt_management.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"wohlfahrt_management.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+    "hourly_long": ["wohlfahrt_management.geocoding_queue.process_geocoding_queue"],
+}
 
 # Testing
 # -------
@@ -241,4 +225,3 @@ app_license = "agpl-3.0"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

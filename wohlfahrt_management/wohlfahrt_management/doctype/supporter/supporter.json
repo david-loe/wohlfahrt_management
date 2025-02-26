@@ -23,7 +23,9 @@
   "postal_code",
   "column_break_dlws",
   "address_line_2",
-  "country"
+  "country",
+  "column_break_eetp",
+  "location"
  ],
  "fields": [
   {
@@ -129,12 +131,22 @@
    "fieldtype": "Attach Image",
    "hidden": 1,
    "label": "Image"
+  },
+  {
+   "fieldname": "column_break_eetp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.location",
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "read_only": 1
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-20 15:14:53.197885",
+ "modified": "2025-02-26 16:31:54.602123",
  "modified_by": "Administrator",
  "module": "Wohlfahrt Management",
  "name": "Supporter",
