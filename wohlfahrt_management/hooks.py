@@ -137,17 +137,20 @@ app_license = "agpl-3.0"
 # ---------------
 # Hook on document methods and events
 
-doc_events = {
-    "Supporter": {
-        "validate": "wohlfahrt_management.geocoding_queue.check_if_new_geocoding_job_is_needed",
-    }
-}
+# doc_events = {
+# 	"*": {
+# 		"on_update": "method",
+# 		"on_cancel": "method",
+# 		"on_trash": "method"
+# 	}
+# }
 
 # Scheduled Tasks
 # ---------------
 
 scheduler_events = {
     "hourly_long": ["wohlfahrt_management.geocoding_queue.process_geocoding_queue"],
+    "daily": ["wohlfahrt_management.geocoding_queue.delete_successfull_jobs_older_than_1_week"],
 }
 
 # Testing

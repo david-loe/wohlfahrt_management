@@ -1,5 +1,11 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "wohlfahrt_management.wohlfahrt_management.doctype.geocoding_job.geocoding_job.run_job_async",
+   "action_type": "Server Action",
+   "label": "Run"
+  }
+ ],
  "allow_rename": 1,
  "creation": "2025-02-26 13:42:05.640108",
  "doctype": "DocType",
@@ -45,7 +51,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-26 14:15:17.557497",
+ "modified": "2025-02-27 11:11:24.943835",
  "modified_by": "Administrator",
  "module": "Wohlfahrt Management",
  "name": "Geocoding Job",

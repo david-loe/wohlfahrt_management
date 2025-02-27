@@ -9,6 +9,7 @@
   "first_name",
   "last_name",
   "date_of_birth",
+  "full_name",
   "column_break_rvfi",
   "salutation",
   "gender",
@@ -141,12 +142,22 @@
    "fieldname": "location",
    "fieldtype": "Geolocation",
    "read_only": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name",
+   "read_only": 1
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-26 16:31:54.602123",
+ "modified": "2025-02-27 13:07:41.210990",
  "modified_by": "Administrator",
  "module": "Wohlfahrt Management",
  "name": "Supporter",
@@ -165,7 +176,9 @@
    "write": 1
   }
  ],
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }
