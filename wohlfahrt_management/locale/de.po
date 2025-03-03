@@ -1,0 +1,301 @@
+# German translations for Wohlfahrt Management.
+# Copyright (C) 2025 david-loe
+# This file is distributed under the same license as the Wohlfahrt Management project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Wohlfahrt Management VERSION\n"
+"Report-Msgid-Bugs-To: kontakt@david-loe.de\n"
+"POT-Creation-Date: 2025-03-03 08:33+0000\n"
+"PO-Revision-Date: 2025-03-03 08:33+0000\n"
+"Last-Translator: kontakt@david-loe.de\n"
+"Language: de\n"
+"Language-Team: kontakt@david-loe.de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#. Label of a Section Break field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Address"
+msgstr "Adresse"
+
+#. Label of a Data field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Address Line 1"
+msgstr "Adresszeile 1"
+
+#. Label of a Data field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Address Line 2"
+msgstr "Adresszeile 2"
+
+#. Label of a Data field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "City"
+msgstr "Stadt"
+
+#. Option for the 'Status' (Select) field in DocType 'Geocoding Job'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_job/geocoding_job.json
+msgid "Completed"
+msgstr "Abgeschlossen"
+
+#. Label of a Section Break field in DocType 'Supporter'
+#. Label of a Tab Break field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Contact"
+msgstr "Kontakt"
+
+#. Label of a Link field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Country"
+msgstr "Land"
+
+#. Label of a Date field in DocType 'Experience'
+#. Label of a Date field in DocType 'Supporter Experience'
+#: wohlfahrt_management/wohlfahrt_management/doctype/experience/experience.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter_experience/supporter_experience.json
+msgid "Date"
+msgstr "Datum"
+
+#. Label of a Date field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Date of Birth"
+msgstr "Geburtsdatum"
+
+#. Label of a Data field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Email Address"
+msgstr "E-Mail-Adresse"
+
+#. Label of a Text field in DocType 'Geocoding Job'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_job/geocoding_job.json
+msgid "Error Message"
+msgstr "Fehlermeldung"
+
+#. Name of a DocType
+#. Label of a Link field in DocType 'Supporter Experience'
+#: wohlfahrt_management/wohlfahrt_management/doctype/experience/experience.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter_experience/supporter_experience.json
+msgid "Experience"
+msgstr "Begegnung"
+
+#. Name of a DocType
+#: wohlfahrt_management/wohlfahrt_management/doctype/experience_type/experience_type.json
+msgid "Experience Type"
+msgstr "Begegnungstyp"
+
+#. Label of a Table field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Experiences"
+msgstr "Begegnungen"
+
+#. Option for the 'Status' (Select) field in DocType 'Geocoding Job'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_job/geocoding_job.json
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#. Label of a Data field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "First Name"
+msgstr "Vorname"
+
+#. Label of a Data field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Full Name"
+msgstr "Vollständiger Name"
+
+#. Label of a Link field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Gender"
+msgstr "Geschlecht"
+
+#. Name of a DocType
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "Geocoding API Settings"
+msgstr "Geocoding API Einstellungen"
+
+#. Name of a DocType
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_job/geocoding_job.json
+msgid "Geocoding Job"
+msgstr "Geocoding-Auftrag"
+
+#. Label of a JSON field in DocType 'Geocoding API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "Headers"
+msgstr "Header"
+
+#. Label of a Attach Image field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Image"
+msgstr "Bild"
+
+#. Description of the 'section_break_jvja' (Section Break) field in DocType
+#. 'Geocoding API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid ""
+"Insert the API URL using Jinja templating language.\n"
+"e.g.: https://map.service.com/get?adr={{ address_line_1 }}, {{ city }}..\n"
+"(You have direct access to all address fields of a Supporter.)"
+msgstr ""
+"Füge die API-URL unter Verwendung der Jinja-Template-Sprache ein.\n"
+"Beispiel: https://map.service.com/get?adr={{ address_line_1 }}, {{ city }}..\n"
+"(Du hast direkten Zugriff auf alle Adressfelder eines Unterstützers.)"
+
+#. Label of a Data field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Last Name"
+msgstr "Nachname"
+
+#. Label of a Data field in DocType 'Geocoding API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "Latitude"
+msgstr "Breitengrad"
+
+#. Label of a Data field in DocType 'Geocoding API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "Longitude "
+msgstr "Längengrad"
+
+#. Label of a Data field in DocType 'Experience'
+#. Label of a Data field in DocType 'Experience Type'
+#. Label of a Data field in DocType 'Network Type'
+#: wohlfahrt_management/wohlfahrt_management/doctype/experience/experience.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/experience_type/experience_type.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/network_type/network_type.json
+msgid "Name"
+msgstr "Name"
+
+#. Name of a DocType
+#. Label of a Link field in DocType 'Supporter Network'
+#: wohlfahrt_management/wohlfahrt_management/doctype/network/network.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter_network/supporter_network.json
+msgid "Network"
+msgstr "Netzwerk"
+
+#. Name of a DocType
+#. Label of a Data field in DocType 'Supporter Network'
+#: wohlfahrt_management/wohlfahrt_management/doctype/network_type/network_type.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter_network/supporter_network.json
+msgid "Network Type"
+msgstr "Netzwerktyp"
+
+#. Label of a Table field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Networks"
+msgstr "Netzwerke"
+
+#. Label of a Tab Break field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Networks & Experiences"
+msgstr "Netzwerke & Begegnungen"
+
+#. Label of a Data field in DocType 'Supporter Experience'
+#. Label of a Data field in DocType 'Supporter Network'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter_experience/supporter_experience.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter_network/supporter_network.json
+msgid "Note"
+msgstr "Notiz"
+
+#. Description of the 'section_break_hirm' (Section Break) field in DocType
+#. 'Geocoding API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "Optional: Provide additional header values to be used for the API requests."
+msgstr "Optional: Zusätzliche Header-Werte angeben, die für die API-Anfragen verwendet werden sollen."
+
+#. Option for the 'Status' (Select) field in DocType 'Geocoding Job'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_job/geocoding_job.json
+msgid "Pending"
+msgstr "Ausstehend"
+
+#. Label of a Data field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Phone"
+msgstr "Telefon"
+
+#. Label of a Data field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Postal Code"
+msgstr "Postleitzahl"
+
+#. Label of a Int field in DocType 'Geocoding API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "Request Interval [ms]"
+msgstr "Anfrageintervall [ms]"
+
+#. Label of a Section Break field in DocType 'Geocoding API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "Result Parameter"
+msgstr "Ergebnisparameter"
+
+#. Label of a Link field in DocType 'Supporter'
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Salutation"
+msgstr "Anrede"
+
+#. Description of the 'Result Parameter' (Section Break) field in DocType
+#. 'Geocoding API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "Specify the parameter of the API response that holds the responding values. For nested access, use dot notation."
+msgstr "Gib den Parameter der API-Antwort an, der die zurückgegebenen Werte enthält. Für verschachtelten Zugriff benutze Punktnotation."
+
+#. Label of a Select field in DocType 'Geocoding Job'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_job/geocoding_job.json
+msgid "Status"
+msgstr "Status"
+
+#. Label of a Link field in DocType 'Geocoding Job'
+#. Name of a DocType
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_job/geocoding_job.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "Supporter"
+msgstr "Unterstützer"
+
+#. Name of a DocType
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter_experience/supporter_experience.json
+msgid "Supporter Experience"
+msgstr "Unterstützer-Begegnung"
+
+#. Name of a DocType
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter_network/supporter_network.json
+msgid "Supporter Network"
+msgstr "Unterstützer-Netzwerk"
+
+#. Name of a role
+#: wohlfahrt_management/wohlfahrt_management/doctype/experience/experience.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/experience_type/experience_type.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_job/geocoding_job.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/network/network.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/network_type/network_type.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter/supporter.json
+msgid "System Manager"
+msgstr "Systemmanager"
+
+#. Description of the 'Request Interval [ms]' (Int) field in DocType 'Geocoding
+#. API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "The time interval to wait between API requests. (in milliseconds)"
+msgstr "Das Zeitintervall, das zwischen API-Anfragen gewartet werden soll. (in Millisekunden)"
+
+#. Label of a Data field in DocType 'Network'
+#: wohlfahrt_management/wohlfahrt_management/doctype/network/network.json
+msgid "Title"
+msgstr "Titel"
+
+#. Label of a Link field in DocType 'Experience'
+#. Label of a Link field in DocType 'Network'
+#. Label of a Data field in DocType 'Supporter Experience'
+#: wohlfahrt_management/wohlfahrt_management/doctype/experience/experience.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/network/network.json
+#: wohlfahrt_management/wohlfahrt_management/doctype/supporter_experience/supporter_experience.json
+msgid "Type"
+msgstr "Typ"
+
+#. Label of a Small Text field in DocType 'Geocoding API Settings'
+#: wohlfahrt_management/wohlfahrt_management/doctype/geocoding_api_settings/geocoding_api_settings.json
+msgid "URL"
+msgstr "URL"
