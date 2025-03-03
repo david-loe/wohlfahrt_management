@@ -3,6 +3,7 @@
 
 import frappe
 from frappe.model.document import Document
+from frappe.utils import cstr
 
 
 class Supporter(Document):
@@ -15,3 +16,10 @@ class Supporter(Document):
                 if not any(self.get(field) != previous_doc.get(field) for field in fields):
                     return
             frappe.new_doc("Geocoding Job", supporter=self.name).insert(ignore_permissions=True)
+
+    def validate(self):
+        self.full_name = get_full_name(self.first_name, self.last_name)
+
+
+def get_full_name(first_name, last_name):
+    return " ".join(filter(None, [cstr(f).strip() for f in [first_name, last_name]]))

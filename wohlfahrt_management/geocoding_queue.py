@@ -5,7 +5,7 @@ import frappe
 def process_geocoding_queue():
     settings = frappe.get_single("Geocoding API Settings")
     if settings.url:
-        jobs = frappe.get_all("Geocoding Job", filters={"status": "Pending"}, limit_page_length=0)
+        jobs = frappe.get_all("Geocoding Job", filters={"status": "Pending"})
         for job in jobs:
             job_doc = frappe.get_doc("Geocoding Job", job.name)
             job_doc.run(settings)

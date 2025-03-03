@@ -3,7 +3,11 @@ import frappe
 
 def execute():
     # Alle Supporter abrufen
-    supporters = frappe.get_all("Supporter", fields=["name", "address_line_1", "city", "postal_code", "country"])
+    supporters = frappe.get_all(
+        "Supporter",
+        fields=["name", "address_line_1", "city", "postal_code", "country"],
+        filters={"location": ("is", "not set")},
+    )
 
     for supporter in supporters:
         # Prüfe, ob alle Adressfelder gesetzt sind
