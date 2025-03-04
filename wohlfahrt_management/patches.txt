@@ -6,3 +6,4 @@
 # Patches added in this section will be executed after doctypes are migrated
 wohlfahrt_management.patches.create_geocoding_jobs_for_already_existing_supporters
 wohlfahrt_management.patches.set_supporter_full_name
+wohlfahrt_management.patches.set_supporter_contact_or_address_modified
