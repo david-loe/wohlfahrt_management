@@ -28,6 +28,8 @@
   "country",
   "column_break_eetp",
   "location",
+  "section_break_jpqs",
+  "contact_or_address_modified",
   "networks_tab",
   "networks",
   "section_break_rnjv",
@@ -182,12 +184,22 @@
    "fieldtype": "Table",
    "label": "Experiences",
    "options": "Supporter Experience"
+  },
+  {
+   "fieldname": "section_break_jpqs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contact_or_address_modified",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "length": 26
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 16:56:34.275078",
+ "modified": "2025-03-04 15:27:02.410387",
  "modified_by": "Administrator",
  "module": "Wohlfahrt Management",
  "name": "Supporter",
