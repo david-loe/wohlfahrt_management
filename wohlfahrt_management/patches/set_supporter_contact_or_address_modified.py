@@ -5,7 +5,7 @@ from frappe.utils import update_progress_bar
 
 
 def execute():
-    """Set full name for all supporters"""
+    """Set contact_or_address_modified for all supporters"""
     frappe.db.auto_commit_on_many_writes = 1
 
     supporters = frappe.get_all(
