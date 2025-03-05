@@ -3,9 +3,7 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import cstr, get_datetime, now_datetime
-
-DATE_TIME_FORMAT = "%Y-%m-%d %H:%M:%S.%f"
+from frappe.utils import cstr, now_datetime
 
 class Supporter(Document):
     # begin: auto-generated types
@@ -81,7 +79,7 @@ class Supporter(Document):
             # Aktualisiere das Feld nur, wenn es noch nicht gesetzt wurde oder sich nicht bereits dem aktuellen Zeitpunkt entspricht
             if (not self.contact_or_address_modified or 
                 self.contact_or_address_modified == previous_doc.get("contact_or_address_modified")):
-                self.contact_or_address_modified = now_datetime().strftime("%Y-%m-%d %H:%M:%S.%f")
+                self.contact_or_address_modified = now_datetime().isoformat()
 
     def validate(self) -> None:
         """
