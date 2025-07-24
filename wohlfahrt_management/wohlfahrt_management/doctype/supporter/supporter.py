@@ -49,37 +49,27 @@ class Supporter(Document):
         """
         Aktualisiert das Änderungsdatum für Kontakt- oder Adressdaten und löst bei Bedarf einen neuen Geocoding-Job aus.
         """
-        # Lokales Flag: Bei neuen Dokumenten (__islocal == True) liegt bereits eine Änderung vor
-        contact_or_address_modified = self.get("__islocal")
-
-        # Hole das vorherige Dokument, falls vorhanden
         previous_doc = self.get_doc_before_save() or {}
+        is_new = self.get("__islocal")
 
-        # Prüfe, ob alle erforderlichen Adressfelder gesetzt sind
-        if all(self.get(field) for field in self.address_fields):
-            # Falls ein vorheriges Dokument existiert, prüfe, ob sich die Adressfelder geändert haben
-            if previous_doc:
-                if not self.has_fields_changed(self.address_fields, previous_doc):
-                    # Keine Änderung der Adressfelder: Kein Geocoding-Job erforderlich
-                    return
-                # Änderung festgestellt
-                contact_or_address_modified = True
-            # Starte neuen Geocoding-Job
+        # Prüfen, ob Adress- bzw. Kontaktfelder geändert wurden
+        addr_changed = previous_doc and self.has_fields_changed(self.address_fields, previous_doc)
+        contact_changed = previous_doc and self.has_fields_changed(self.contact_fields, previous_doc)
+
+        # Neuer Geocoding-Job, wenn Adresse komplett und neu oder geändert
+        if all(self.get(f) for f in self.address_fields) and (is_new or addr_changed):
             frappe.new_doc("Geocoding Job", supporter=self.name).insert(ignore_permissions=True)
 
-        # Falls bislang noch keine Änderung festgestellt wurde, prüfe auch die Kontaktfelder
-        if not contact_or_address_modified:
-            if previous_doc and not self.has_fields_changed(self.address_fields.union(self.contact_fields), previous_doc):
-                # Weder Adress- noch Kontaktfelder haben sich geändert
-                return
-            contact_or_address_modified = True
+        # Wenn weder Adresse noch Kontakt geändert und nicht neu, bleibt alles unverändert
+        if not (is_new or addr_changed or contact_changed):
+            return
 
-        # Aktualisiere das Änderungsdatum, falls nötig
-        if contact_or_address_modified:
-            # Aktualisiere das Feld nur, wenn es noch nicht gesetzt wurde oder sich nicht bereits dem aktuellen Zeitpunkt entspricht
-            if (not self.contact_or_address_modified or 
-                self.contact_or_address_modified == previous_doc.get("contact_or_address_modified")):
-                self.contact_or_address_modified = now_datetime().isoformat()
+        # An dieser Stelle wissen wir: entweder neu, oder Adresse geändert, oder Kontakt geändert
+        # Timestamp nur aktualisieren, wenn er noch leer war oder wirklich noch der alte Wert ist
+        if (not self.contact_or_address_modified
+            or self.contact_or_address_modified == previous_doc.get("contact_or_address_modified")):
+            self.contact_or_address_modified = now_datetime().isoformat()
+        
 
     def validate(self) -> None:
         """
